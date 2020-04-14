@@ -15,6 +15,7 @@ public class RepositryConfig implements RepositoryRestConfigurer {
 
     @Autowired
     private EntityManager entityManager;
+
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
 //        config.exposeIdsFor(Book.class);
