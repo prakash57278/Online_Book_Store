@@ -10,11 +10,11 @@ import java.util.Date;
 
 
 @Entity
-@Table(name = "tabl_book")
+@Table
 @Setter
 @Getter
 @ToString
-public class Book {
+public class Book{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
