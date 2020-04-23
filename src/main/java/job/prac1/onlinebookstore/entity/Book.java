@@ -10,7 +10,7 @@ import java.util.Date;
 
 
 @Entity
-@Table
+@Table(name="tbl_book")
 @Setter
 @Getter
 @ToString

@@ -8,7 +8,7 @@ import java.util.Set;
 
 
 @Entity
-@Table
+@Table(name="tbl_category")
 @Setter
 @Getter
 @ToString
@@ -18,8 +18,8 @@ public class BookCategory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column
-    private String category_name;
+    @Column(name="category_name") 
+    private String categoryName;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
     private Set<Book> book;
